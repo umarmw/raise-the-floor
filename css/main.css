@@ -1,0 +1,360 @@
+/* --------------------------------------------------------------- */
+/* COLOR CODES
+
+colorGreenLight: #0C9E77;
+colorGreenApple: #1dce3a;
+colorGreenDark: #076048;
+colorBlack: #000000;
+colorWhite: #ffffff; 
+*/
+
+
+
+
+/* --------------------------------------------------------------- */
+/* FONTS IMPORT */
+
+@font-face {
+  font-family: "DIN Light";
+  src: url("../assets/fonts/DINWebPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "DIN Regular";
+  src: url("../assets/fonts/DINWebPro.ttf");
+}
+
+@font-face {
+  font-family: "DIN Bold";
+  src: url("../assets/fonts/DINWebPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "DIN Black";
+  src: url("../assets/fonts/DINWebPro-Black.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../assets/fonts/Gotham-Bold.otf");
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+/* GLOBAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  text-align: center;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0C9E77;
+  color: #ffffff;
+}
+
+section {
+  padding: 4rem 1rem;
+}
+
+
+a {
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: #000000;
+}
+
+h3,
+h4 {
+  font-family: 'DIN Bold';
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: 'DIN Regular';
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+
+/* ------------------ */
+/* CUSTOM STYLES */
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+
+/* BUTTON */
+.btn-primary {
+  font-family: 'DIN Bold';
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  border-radius: 57px;
+  background-color: #076048;
+  border-radius: 57px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #1dce3a;
+}
+
+
+/* BACKGROUND */
+.background-dark {
+  background-color: #076048;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+  }
+}
+
+
+@media screen and (min-width: 1366px) {
+  .btn-primary {
+    font-family: 'DIN Bold';
+    font-size: 1.6rem;
+    background-color: #076048;
+    padding: 1rem 4rem;
+    border-radius: 57px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+}
+
+/* --------------------------------------------------------------- */
+/* HEADER CONTENT */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(41, 171, 226, 1));
+}
+
+
+.header .logo {
+  display: flex;
+  align-self: center;
+  margin: 2rem 1rem;
+}
+
+.header .logo .logo-rapp {
+  width: 6rem;
+  margin-right: 1rem;
+}
+
+.header .logo .logo-code {
+  width: 4rem;
+}
+
+
+.header .mountain-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.header .mountain-container img {
+  width: 50rem;
+}
+
+
+
+.header .partnership .logo {
+  margin: 0 auto;
+  width: 15rem;
+}
+
+.header .partnership .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .partnership .text img {
+  width: 8rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .header .logo {
+    align-self: flex-end;
+    margin: 2rem;
+  }
+
+  .header .mountain-container img {
+    width: 100%;
+  }
+
+  .header .partnership .logo {
+    width: 20rem;
+  }
+}
+
+
+/* --------------------------------------------------------------- */
+/* SECTIONS CONTENT */
+
+.sect-intro {
+  padding-top: 1rem;
+}
+
+.sect-intro .text-container .text {
+  line-height: 20px;
+}
+
+
+
+
+/* ----------- SECTION DIAGRAM -----------  */
+.sect-diagram {
+  padding-top: 0;
+}
+
+.sect-diagram img {
+  width: 6rem;
+}
+
+.sect-diagram .content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.sect-diagram .arrow {
+  align-self: center;
+  margin: 0.5rem 0.5rem 3rem 0.5rem;
+
+}
+
+.sect-diagram .arrow img {
+  width: 3rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .sect-diagram img {
+    width: 10rem;
+  }
+
+  .sect-diagram .arrow {
+    margin: 0 4rem;
+  }
+
+  .sect-diagram .arrow img {
+    width: 6rem;
+  }
+}
+
+
+
+@media screen and (min-width: 1366px) {
+  .sect-diagram img {
+    width: 20rem;
+  }
+
+  .sect-diagram .arrow img {
+    width: 8rem;
+  }
+}
+
+/* ------------------------------------  */
+
+
+
+/* ----------- SECTION STEPS -----------  */
+.sect-steps .card-container {
+  margin-bottom: 6rem;
+}
+
+.sect-steps .card {
+  margin-bottom: 2rem;
+}
+
+.sect-steps .card .number {
+  width: 55px;
+  height: 55px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sect-steps .card h3 {
+  position: relative;
+  margin: 1rem 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .sect-steps .card {
+    margin-bottom: 4rem;
+  }
+}
+
+
+@media screen and (min-width: 1366px) {
+  .sect-steps .card .number {
+    width: 72px;
+    height: 72px;
+    border: 6px solid #fff;
+  }
+}
+
+/* ------------------------------------  */
+
+
+
+/* --------------------------------------------------------------- */
+/* FOOTER CONTENT */
+
+.footer {
+  /* background-color: #0C9E77; */
+  padding: 1rem;
+  font-family: "DIN Regular";
+}
+
+.footer p a {
+  text-decoration: underline;
+}
