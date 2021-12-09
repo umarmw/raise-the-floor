@@ -59,6 +59,7 @@ body {
   margin: 0;
   background-color: #0C9E77;
   color: #ffffff;
+  font-family: 'DIN Regular';
 }
 
 section {
@@ -75,20 +76,30 @@ a:hover {
   color: #000000;
 }
 
+
+h2,
 h3,
 h4 {
   font-family: 'DIN Bold';
   margin: 2rem 0;
 }
 
+h2,
 h3 {
   font-size: 1.2rem;
 }
 
+
 p {
-  font-family: 'DIN Regular';
+
   font-size: 0.9rem;
 }
+
+span {
+  font-size: 1.3rem;
+}
+
+
 
 @media screen and (min-width: 768px) {
   h3 {
@@ -321,10 +332,18 @@ p {
   justify-content: center;
 }
 
-.sect-steps .card h3 {
-  position: relative;
-  margin: 1rem 0;
+.sect-steps .card span {
+  font-family: 'DIN Bold';
+  padding-top: 4px;
 }
+
+
+.sect-steps .card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -342,7 +361,6 @@ p {
   }
 }
 
-/* ------------------------------------  */
 
 
 
@@ -352,7 +370,6 @@ p {
 .footer {
   /* background-color: #0C9E77; */
   padding: 1rem;
-  font-family: "DIN Regular";
 }
 
 .footer p a {
