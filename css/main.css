@@ -1,19 +1,223 @@
-/* GLOBAL STYLING */
+/* --------------------------------------------------------------- */
+/* COLOR CODES
+
+colorGreenLight: #0C9E77;
+colorGreenApple: #1dce3a;
+colorGreenDark: #076048;
+colorBlack: #000000;
+colorWhite: #ffffff; 
+*/
+
+
+
+
+/* --------------------------------------------------------------- */
+/* FONTS IMPORT */
+
+@font-face {
+  font-family: "DIN Light";
+  src: url("../assets/fonts/DINWebPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "DIN Regular";
+  src: url("../assets/fonts/DINWebPro.ttf");
+}
+
+@font-face {
+  font-family: "DIN Bold";
+  src: url("../assets/fonts/DINWebPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "DIN Black";
+  src: url("../assets/fonts/DINWebPro-Black.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../assets/fonts/Gotham-Bold.otf");
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+/* GLOBAL STYLES */
 
 * {
   box-sizing: border-box;
 }
 
-html {}
+html {
+  text-align: center;
+}
 
 
 body {
   padding: 0;
   margin: 0;
+  background-color: #0C9E77;
+  color: #ffffff;
+}
+
+section {
+  padding: 4rem 1rem;
 }
 
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h3,
+h4 {
+  font-family: 'DIN Bold';
+  margin: 2rem 0;
+}
+
+p {
+  font-family: 'DIN Regular';
+}
+
+
+
+/* ------------------ */
+/* CUSTOM STYLES */
+
 .container {
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
+}
+
+
+.btn-primary {
+  font-family: 'DIN Bold';
+  font-size: 1.6rem;
+  background-color: #076048;
+  padding: 1rem 4rem;
+  border-radius: 57px;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1dce3a;
+}
+
+.background-dark {
+  background-color: #076048;
+}
+
+
+/* --------------------------------------------------------------- */
+/* HEADER CONTENT */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(41, 171, 226, 1));
+}
+
+
+.header .logo {
+  display: flex;
+  align-self: flex-end;
+  margin: 2rem;
+}
+
+.header .logo .logo-rapp {
+  width: 6rem;
+  margin-right: 1rem;
+}
+
+.header .logo .logo-code {
+  width: 4rem;
+}
+
+
+.header .mountain-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+
+.header .partnership {}
+
+.header .partnership .logo {
+  margin: 0 auto;
+  width: 20rem;
+}
+
+.header .partnership .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .partnership .text img {
+  width: 8rem;
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+/* SECTIONS CONTENT */
+
+.sect-intro {
+  padding-top: 1rem;
+}
+
+.sect-intro .text-container .text {
+  line-height: 20px;
+}
+
+
+
+
+.sect-diagram {
+  padding-top: 0;
+}
+
+.sect-diagram img {
+  width: 20rem;
+}
+
+.sect-diagram .content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.sect-diagram .arrow {
+  align-self: center;
+  margin: 0 4rem;
+}
+
+.sect-diagram .arrow img {
+  width: 8rem;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* FOOTER CONTENT */
+
+.footer {
+  /* background-color: #0C9E77; */
+  padding: 1rem;
+  font-family: "DIN Regular";
+}
+
+.footer p a {
+  text-decoration: underline;
 }
