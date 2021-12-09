@@ -101,12 +101,6 @@ p {
   }
 }
 
-@media screen and (min-width: 1366px) {
-  p {
-    font-size: 1.2rem;
-  }
-}
-
 
 /* ------------------ */
 /* CUSTOM STYLES */
