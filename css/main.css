@@ -200,6 +200,7 @@ span {
 
 .header .mountain-container img {
   width: 50rem;
+  margin-left: -5px;
 }
 
 
