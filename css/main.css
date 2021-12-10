@@ -187,12 +187,8 @@ span {
 }
 
 .header .logo .logo-rapp {
-  width: 6rem;
+  width: 10rem;
   margin-right: 1rem;
-}
-
-.header .logo .logo-code {
-  width: 4rem;
 }
 
 
