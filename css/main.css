@@ -226,6 +226,17 @@ span {
 }
 
 
+.header .partnership .text p {
+  position: relative;
+  left: 8px;
+}
+
+.header .partnership .text img {
+  position: relative;
+  right: 8px;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .header .logo {
