@@ -188,7 +188,7 @@ span {
 
 .header .logo .logo-rapp {
   width: 10rem;
-  margin-right: 1rem;
+  margin-right: 0;
 }
 
 
@@ -221,11 +221,20 @@ span {
 }
 
 
+.rtf-logo img {
+  width: 230px;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .header .logo {
     align-self: flex-end;
     margin: 2rem;
+  }
+
+  .header .logo .logo-rapp {
+    margin-right: 1rem;
   }
 
   .header .mountain-container img {
@@ -237,7 +246,13 @@ span {
   .header .partnership .logo {
     width: 20rem;
   }
+
+  .rtf-logo img {
+    width: 320px;
+  }
 }
+
+
 
 
 /* --------------------------------------------------------------- */
@@ -249,10 +264,6 @@ span {
 
 .sect-intro .text-container .text {
   line-height: 20px;
-}
-
-a.logo img {
-  width: 320px;
 }
 
 
